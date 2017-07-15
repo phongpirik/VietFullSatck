@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC&subset=latin,vietnamese,latin-ext);
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*block-key*/
+.block-key {
+    padding-top: 10px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.block-key li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+.block-key li:first-child {
+    color: #333;
+    font-weight: 700;
+    margin-left: 0;
+    margin-right: 10px;
+
+}
+
+.block-key li a {
+    padding: 2px 5px 3px 5px;
+    background: #3c8dbc;
+    border-color: #367fa9;
+    color: #fff;
+    font-size: 13px;
+    float: left;
+}
+
+.block-key li a:hover {
+    color: black;
+    background: #3c8dbc;
+}
+.block-key li span {
+    padding: 2px 5px 3px 5px;
+    background: #3c8dbc;
+    border-color: #367fa9;
+    cursor:default;
+    color: #fff;
+    font-size: 13px;
+    float: left;
+}
+
+.block-key li span:hover {
+    color: #fff;
+    cursor:default;
+    background: #3c8dbc;
+}
+/*popup-slider*/
+
+/*customer */
+
+.locked-info {
+    display: none;
+}
+.locked-info span i{
+    color: #bbbec5;
+}
+.table-hover  tbody  tr:hover .locked-info {
+  background-color: #f5f5f5;
+  display: block;
+}
+
+
+.breadcrumb-left {
+    margin-top: 10px;
+}
+.breadcrumb-left span a{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.breadcrumb-left span a span{
+    color: black;
+}

@@ -1,0 +1,578 @@
+/**
+ * @author QuocTuan.Info
+ * @copyright 2016
+ */
+
+/********************************
+    DÙNG CHUNG
+ *******************************/
+body, td, th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #444;
+}
+body {
+    width: 800px;
+    margin: 30px auto;
+    background: #eee url('../images/bg_1.png');
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+img {
+    border: none;
+}
+form {
+    margin: 0px auto;
+}
+fieldset {
+    padding: 10px;
+    border: 1px solid silver;
+    text-align: left;
+    margin: 0px auto;
+    /** Thêm CSS 3.0 **/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+legend {
+    text-transform: uppercase;
+    color: #0A71A5;
+    font-weight: bold;
+    font-size: 14px;
+}
+input, select {
+    padding: 3px;
+    outline: none;
+}
+textarea {
+    width: 100%;
+    outline: none;
+}
+img.thumbs {
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background: white;
+}
+.form_label {
+    display: inline-block;
+    width: 120px;
+    margin: 3px;
+    vertical-align: middle;
+}
+.form_item {
+    display: inline-block;
+    margin: 3px;
+    vertical-align: middle;
+}
+.textbox,.select {
+    width: 300px;
+    border: 1px solid silver;
+    /** Thêm CSS 3.0 **/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.textbox:hover {
+    background: #f5f5f5;
+}
+.button {
+    padding: 5px 20px 5px 20px;
+    background-color: #0E76AA;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /** Thêm CSS 3.0 **/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+}
+.button:hover {
+    background-color: #C0206E;
+}
+.error_msg {
+    text-align: center;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+    border: 1px dotted #ccc;
+    background:#52cba4 center;
+    /** Thêm CSS 3.0 **/
+    /*border-radius: 3px;*/
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.error_msg li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.result_msg {
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    /*padding: 20px 5px 20px 60px;*/
+    /*border: 1px solid green;*/
+    background: #52cba4  center;
+}
+#layout {
+    /** Thêm CSS 3.0 **/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 1px 1px 7px #ccc;
+    -moz-box-shadow: 1px 1px 7px #ccc;
+    -webkit-box-shadow: 1px 1px 7px #ccc;
+}
+#top {
+    background-image: url("../images/content_bg.png");
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #eee;
+    font-weight: bold;
+    /** Thêm CSS 3.0 **/
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+#menu {
+    background-color: #E5E5E5;
+    padding: 3px;
+    font-weight: bold;
+    border: 1px solid silver;
+}
+#menu a {
+    color: #555555;
+}
+#menu a:hover {
+    color: #BF0000;
+}
+#main {
+    padding: 10px;
+    background-color: white;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+#bottom{
+    line-height: 40px;
+    height: 40px;
+    color: #aaa;
+    background-image: url("../images/content_bg.png");
+    text-align: center;
+    /** Thêm CSS 3.0 **/
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+}
+/**********************
+    BẢNG DANH SÁCH
+ *********************/
+.list_table /* Bảng danh sách */ {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 10px auto;
+}
+.list_heading /* Dòng chứa tiêu đề bảng */ {
+    background-image: url("../images/content_bg.png");
+    border-right: 1px solid black;
+}
+.list_heading > td /* Những ô ở dòng tiêu đề */ {
+    font-weight: bold;
+    text-align: center;
+    height: 26px;
+    color: white;
+    background: url('../../../images/nav_sep.png') no-repeat left bottom;
+    padding: 3px;
+}
+.list_data > td /* Dòng chứa record */ {
+    border: 1px solid #eaeaea;
+    padding: 3px;
+}
+.list_data:hover /* Dòng chứa record */ {
+    background: #f6f6f6;
+}
+.id_col /* Cột số thứ tự */ {
+    width: 35px;
+}
+.pass_col{
+    width: 10px;
+}
+.action_col /* Cột thao tác quản lý */ {
+    width: 100px;
+}
+.aligncenter {
+    text-align: center;
+}
+.alignright {
+    text-align: right;
+}
+/********************************
+    DÙNG CHO TRANG CHÍNH 
+ *******************************/
+.function_table {
+    border-spacing: 10px;
+    /*
+    background-color: #F5F5F5;
+    border: 1px solid #D6D6D6;
+    */
+    /* Thêm một chút CSS 3 */
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.function_item {
+    border: 1px solid #d8d8d8;
+    width: 120px;
+    height: 40px;
+    padding: 85px 5px 5px 5px;
+    text-align: center;
+    /* Thêm một chút CSS 3 */
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.function_item:hover {
+    background-color: #f5f5f5;
+    /* Thêm một chút CSS 3 */
+    border-radius: 0px 0px 20px 0px;
+    -moz-border-radius: 0px 0px 20px 0px;
+    -webkit-border-radius: 0px 0px 20px 0px;
+    box-shadow: 0px 0px 4px #cecece;
+    -moz-box-shadow: 0px 0px 4px #cecece;
+    -webkit-box-shadow: 0px 0px 4px #cecece;
+}
+.function_item a {
+    color: #555555;
+    font-weight: bold;
+}
+.function_item:hover a{
+    color: black;
+}
+.statistics_panel {
+    width: 300px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 22px;
+    padding: 0px 10px;
+}
+.statistics_panel h3 {
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 40px;
+    background: url('../images/chart.png') no-repeat left center;
+}
+.user_add {
+    background: url("../images/user_add.png") no-repeat center center;
+}
+.user_list {
+    background: url("../images/user.png") no-repeat center center;
+}
+.cate_add {
+    background: url("../images/category_add.png") no-repeat center center;
+}
+.cate_list {
+    background: url("../images/category.png") no-repeat center center;
+}
+.news_add {
+    background: url("../images/news_add.png") no-repeat center center;
+}
+.news_list {
+    background: url("../images/news.png") no-repeat center center;
+}
+/********************************
+    DÙNG CHO TRANG LOGIN 
+ *******************************/
+.login_img {
+    width: 150px;
+    height: 150px;
+    background: url("../images/login_lock.png") no-repeat center center;
+}
+/*************************************************
+    THANH PHÂN TRANG (THUẬT TOÁN PHÂN TRANG) 
+ ************************************************/
+#paging_nav {
+    text-align: center;
+    margin-top: 10px;
+}
+#paging_nav span.current_page {
+    margin: 0px 2px;
+    padding: 3px 7px;
+    background-image: url('../images/content_bg.png');
+    color: #ccc;
+    font-weight: bold;
+}
+#paging_nav a {
+    margin: 0px 2px;
+    padding: 2px 6px;
+    border: 1px solid gray;
+    color: #555555;
+    font-weight: bold;
+}
+#paging_nav a:hover {
+    padding: 3px 7px;
+    background-image: url('../images/content_bg.png');
+    border: none;
+    color: #ccc;
+}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+.wrapper {
+  background: #50a3a2;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 460px;
+  margin-top: -200px;
+  overflow: hidden;
+}
+.wrapper.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+          transform: translateY(85px);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+  height: 600px;
+  text-align: center;
+}
+.container h1 {
+  font-size: 40px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 300px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+.recap {
+   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 300px;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #53e3a6;
+}
+form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
+}
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}

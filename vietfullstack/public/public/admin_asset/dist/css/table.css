@@ -1,0 +1,375 @@
+
+
+legend {
+    text-transform: uppercase;
+    color: #0Á7Ạ;
+    font-weight: bold;
+    font-size: 14px;
+}
+input, select {
+    padding: 3px;
+    outline: none;
+}
+textarea {
+    width: 100%;
+    outline: none;
+}
+img.thumbs {
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background: white;
+}
+.form_label {
+    display: inline-block;
+    width: 120px;
+    margin: 3px;
+    vertical-align: middle;
+}
+.form_item {
+    display: inline-block;
+    margin: 3px;
+    vertical-align: middle;
+}
+.textbox,.select {
+    width: 300px;
+    border: 1px solid silver;
+    /** Thêm CSS 3.0 **/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.textbox:hover {
+    background: #f5f5f5;
+}
+.button {
+    padding: 5px 20px 5px 20px;
+    background-color: #0E76AA;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /** Thêm CSS 3.0 **/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+}
+.button:hover {
+    background-color: #C0206E;
+}
+.error_msg {
+    text-align: left;
+    color: red;
+    font-weight: bold;
+    padding: 20px 5px 20px 60px;
+    border: 1px dotted #ccc;
+    background: #f7f7f7 url("../../../images/warning.png") no-repeat 15px center;
+    /** Thêm CSS 3.0 **/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.error_msg li {
+    list-style: none
+}
+
+.result_msg {
+    text-align: left;
+    font-style: italic;
+    color: black;
+    padding: 20px 5px 20px 60px;
+    border: 1px solid green;
+    background: #C1FFE0 url("../../../images/valid.png") no-repeat 15px center;
+}
+#layout {
+    /** Thêm CSS 3.0 **/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 1px 1px 7px #ccc;
+    -moz-box-shadow: 1px 1px 7px #ccc;
+    -webkit-box-shadow: 1px 1px 7px #ccc;
+}
+#top {
+    background-image: url("../images/content_bg.png");
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #eee;
+    font-weight: bold;
+    /** Thêm CSS 3.0 **/
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+#menu {
+    background-color: #ẸẸẸ;
+    padding: 3px;
+    font-weight: bold;
+    border: 1px solid silver;
+}
+#menu a {
+    color: #555555;
+}
+#menu a:hover {
+    color: #BF0000;
+}
+#main {
+    padding: 10px;
+    background-color: white;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+#bottom{
+    line-height: 40px;
+    height: 40px;
+    color: #aaa;
+    background-image: url("../images/content_bg.png");
+    text-align: center;
+    /** Thêm CSS 3.0 **/
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+}*/
+/**********************
+    BẢNG DANH SÁCH
+ *********************/
+.list_table /* Bảng danh sách */ {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 10px auto;
+}
+.list_heading /* Dòng chứa tiêu đề bảng */ {
+    background-image: url("../../../images/content_bg.png");
+    border-right: 1px solid black;
+}
+.list_heading > td /* Những ô ở dòng tiêu đề */ {
+    font-weight: bold;
+    text-align: center;
+    height: 26px;
+    color: white;
+    background: url('../../../images/nav_sep.png') no-repeat left bottom;
+    padding: 3px;
+}
+.list_data > td /* Dòng chứa record */ {
+    border: 1px solid #eaeaea;
+    padding: 3px;
+}
+.list_data:hover /* Dòng chứa record */ {
+    background: #f6f6f6;
+}
+.id_col /* Cột số thứ tự */ {
+    width: 35px;
+}
+.action_col /* Cột thao tác quản lý */ {
+    width: 65px;
+}
+.aligncenter {
+    text-align: center;
+}
+.alignright {
+    text-align: right;
+}
+/********************************
+    DÙNG CHO TRANG CHÍNH 
+ *******************************/
+.function_table {
+    border-spacing: 10px;
+    /*
+    background-color: #F5F5F5;
+    border: 1px solid #D6D6D6;
+    */
+    /* Thêm một chút CSS 3 */
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.function_item {
+    border: 1px solid #d8d8d8;
+    width: 120px;
+    height: 40px;
+    padding: 85px 5px 5px 5px;
+    text-align: center;
+    /* Thêm một chút CSS 3 */
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.function_item:hover {
+    background-color: #f5f5f5;
+    /* Thêm một chút CSS 3 */
+    border-radius: 0px 0px 20px 0px;
+    -moz-border-radius: 0px 0px 20px 0px;
+    -webkit-border-radius: 0px 0px 20px 0px;
+    box-shadow: 0px 0px 4px #cecece;
+    -moz-box-shadow: 0px 0px 4px #cecece;
+    -webkit-box-shadow: 0px 0px 4px #cecece;
+}
+.function_item a {
+    color: #555555;
+    font-weight: bold;
+}
+.function_item:hover a{
+    color: black;
+}
+.statistics_panel {
+    width: 300px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 22px;
+    padding: 0px 10px;
+}
+.statistics_panel h3 {
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 40px;
+    background: url('../images/chart.png') no-repeat left center;
+}
+.user_add {
+    background: url("../images/user_add.png") no-repeat center center;
+}
+.user_list {
+    background: url("../images/user.png") no-repeat center center;
+}
+.cate_add {
+    background: url("../images/category_add.png") no-repeat center center;
+}
+.cate_list {
+    background: url("../images/category.png") no-repeat center center;
+}
+.news_add {
+    background: url("../images/news_add.png") no-repeat center center;
+}
+.news_list {
+    background: url("../images/news.png") no-repeat center center;
+}
+/********************************
+    DÙNG CHO TRANG LOGIN 
+ *******************************/
+.login_img {
+    width: 150px;
+    height: 150px;
+    background: url("../images/login_lock.png") no-repeat center center;
+}
+/*************************************************
+    THANH PHÂN TRANG (THUẬT TOÁN PHÂN TRANG) 
+ ************************************************/
+#paging_nav {
+    text-align: center;
+    margin-top: 10px;
+}
+#paging_nav span.current_page {
+    margin: 0px 2px;
+    padding: 3px 7px;
+    background-image: url('../images/content_bg.png');
+    color: #ccc;
+    font-weight: bold;
+}
+#paging_nav a {
+    margin: 0px 2px;
+    padding: 2px 6px;
+    border: 1px solid gray;
+    color: #555555;
+    font-weight: bold;
+}
+#paging_nav a:hover {
+    padding: 3px 7px;
+    background-image: url('../images/content_bg.png');
+    border: none;
+    color: #ccc;
+}
+#white-background{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #fefefe;
+  opacity: 0.7;
+  z-index: 9999;
+}
+#dlgbox{
+  display: none;
+  position: fixed;
+  width: 700px;
+  height: 450px;
+  z-index: 9999;
+  border-radius: 8px;
+  background-color: #ccccff;
+}
+#dlg-body{
+  background-color: #ccccff;
+  color: black;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0px 2px 0px 2px;
+}
+#dlg-header{
+  padding: 10px;
+}
+#dlg-img{
+	text-align: right;
+	float: right;
+}
+#dlg-img img{
+  color: white;
+  padding: 5px;
+  border: 0px;
+}
+#dlg-text{
+	float: left;
+}
+#dlg-text p{
+	text-align: left;
+}
+div.gallery {
+    margin: 7px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: auto;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.scroll-box{
+	width: 680px;
+	height: 303px;
+	position: fixed;
+	border: 1px solid #CCCCCC;
+	z-index: -1;
+	background-color: #cc6633;
+}
+.btn-subimg {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btn-is-active {
+  pointer-events: none;
+  @include opacity(0.7);
+}
